@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "cp -rf app/_components/* dist && next build",
-    "publish": "npm run build && npm publish",
+    "publish": "npm publish",
     "start": "next start",
     "lint": "next lint"
   },
