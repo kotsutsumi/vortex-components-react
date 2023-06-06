@@ -1,95 +1,51 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+// page.tsx
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+'use client'
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+import Link from 'next/link'
+import { C1, C2 } from '@/app/_components/Caption'
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+export default function IndexPage() {
+    return (
+        <main className="p-4">
+            <C1 className="mb-8">Vortex Components for React</C1>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+            <ul>
+                <li>
+                    <Link href="./caption">Caption</Link>{' '}
+                </li>
+                <li>
+                    <Link href="./card-container">CardContainer</Link>{' '}
+                </li>
+                <li>
+                    <Link href="./color-box">ColorBox</Link>{' '}
+                </li>
+                <li>
+                    <Link href="./dictionary">Dictionary</Link>{' '}
+                </li>
+                <li>
+                    <C2 className="mb-4 mt-8">Layouts</C2>
+                    <ul>
+                        <li>
+                            <Link href="./layouts/breakpoint">Breakpoint</Link>{' '}
+                        </li>
+                        <li>
+                            <Link href="./layouts/form">Form</Link>{' '}
+                        </li>
+                        <li>
+                            <Link href="./layouts/grid">Grid</Link>{' '}
+                        </li>
+                        <li>
+                            <Link href="./layouts/rows">Rows</Link>{' '}
+                        </li>
+                        <li>
+                            <Link href="./layouts/cols">Cols</Link>{' '}
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </main>
+    )
 }
+
+// EOF
