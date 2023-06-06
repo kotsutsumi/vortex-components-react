@@ -6,8 +6,8 @@ import { C1, C2, C3, C4, C5, C6 } from '@/app/_components/Caption'
 
 export default function CaptionPage() {
     return (
-        <main>
-            <h1>Caption</h1>
+        <main className="p-4">
+            <C1>Caption</C1>
             <div>
                 <C1>Level 1</C1>
                 <C2>Level 2</C2>
