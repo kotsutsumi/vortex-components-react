@@ -1,0 +1,35 @@
+{
+  "name": "vortex-components-react",
+  "version": "0.0.1",
+  "description": "Components for Vortex Core.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "cp -rf app/_components/* dist && next build",
+    "publish": "npm publish",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kotsutsumi/vortex-components-react.git"
+  },
+  "author": "Kazuhiro Kotsutsumi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kotsutsumi/vortex-components-react/issues"
+  },
+  "homepage": "https://github.com/kotsutsumi/vortex-components-react#readme",
+  "dependencies": {
+    "@types/node": "20.2.5",
+    "@types/react": "18.2.8",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.4",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "recoil": "^0.7.7",
+    "typescript": "5.1.3",
+    "vortex-deco": "^0.0.2"
+  }
+}
