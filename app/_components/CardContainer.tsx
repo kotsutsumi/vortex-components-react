@@ -115,7 +115,8 @@ export default function CardContainer({
             <div
                 className={styles}
                 style={{
-                    backgroundImage: 'url("/images/tiny-checkers.png")'
+                    backgroundImage:
+                        'url(\'data:image/svg+xml;utf8,<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="4" height="4" fill="black" fill-opacity="0.03"/><rect x="4" y="4" width="4" height="4" fill="black" fill-opacity="0.03"/></svg>\');'
                 }}
             >
                 {children}

@@ -10,6 +10,8 @@ import {
     GrayBox,
     GreenBox,
     IndigoBox,
+    Memo,
+    Note,
     OrangeBox,
     PinkBox,
     PrimaryBox,
@@ -17,6 +19,7 @@ import {
     RedBox,
     SurfaceBox,
     TealBox,
+    WIP,
     WhiteBox,
     YellowBox
 } from '@/app/_components/ColorBox'
@@ -88,6 +91,27 @@ export default function ColorBoxPage() {
                 <div className="mb-4">
                     <C2>Yellow</C2>
                     <YellowBox className="w-4rem h-4rem p-4 m-2">1</YellowBox>
+                </div>
+
+                <div className="mb-4">
+                    <C2>WIP</C2>
+                    <WIP className="w-14rem h-4rem p-4 m-2">
+                        Work in progress.
+                    </WIP>
+                </div>
+
+                <div className="mb-4">
+                    <C2>Memo</C2>
+                    <Memo className="w-14rem h-4rem p-4 m-2">
+                        Some memo text.
+                    </Memo>
+                </div>
+
+                <div className="mb-4">
+                    <C2>Note</C2>
+                    <Note className="w-14rem h-4rem p-4 m-2">
+                        Some note text.
+                    </Note>
                 </div>
             </div>
         </main>
